@@ -35,39 +35,39 @@ function LastSection() {
             {[
               {
                 heading: "basic plan",
-                title: "4% Daily for 2 Days",
+                title: "10% Daily for 7 Days",
                 subtext:
                   "Getting started with us is really easy. Fill in the requested fields regarding your personal information and trading expertise to complete Client Area registration.",
                 img: basicPlanImage,
                 features: [
-                  "$10 - $99",
-                  "4% daily",
+                  "$100 - $999",
+                  "10% daily",
                   "10% Referral Bonus",
                   "24/7 Support",
                 ],
               },
               {
                 heading: "standard plan",
-                title: "8% Daily for 5 Days",
+                title: "12% Daily for 15 Days",
                 subtext:
                   "You have an unlimited access to our wide range of profitable plans to subscribe to. Once your contract is started, your earnings will automatically be credited to you wallet.",
                 img: standardPlanImage,
                 features: [
                   "$1,000 - $4,999",
-                  "8% daily",
+                  "12% daily",
                   "10% Referral Bonus",
                   "24/7 Support",
                 ],
               },
               {
                 heading: "pro plan",
-                title: "12% Daily for 10 Days",
+                title: "15% Daily for 15 Days",
                 subtext:
                   "Once earnings has been collected or claimed, you can confidently head straight for the withdrawal section to withdraw your funds. Funds are immediately sent to your wallet address.",
                 img: proPlanImage,
                 features: [
                   "$5,000 - $10,000,000",
-                  "12% daily",
+                  "15% daily",
                   "10% Referral Bonus",
                   "24/7 Support",
                 ],
