@@ -48,7 +48,7 @@ function LastSection() {
               },
               {
                 heading: "standard plan",
-                title: "12% Daily for 15 Days",
+                title: "12% Daily for 10 Days",
                 subtext:
                   "You have an unlimited access to our wide range of profitable plans to subscribe to. Once your contract is started, your earnings will automatically be credited to you wallet.",
                 img: standardPlanImage,
