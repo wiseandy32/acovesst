@@ -32,6 +32,13 @@ import usdtQRCode from "@/assets/usdt-trc20-qr.jpg";
 import dogeQRCode from "@/assets/doge-qr.jpg";
 import algoQRCode from "@/assets/algo-qr.jpg";
 import solQRCode from "@/assets/sol-qr.jpg";
+import ltcQRCode from "@/assets/ltc-qr.jpg";
+import bnbQRCode from "@/assets/bnb-qr.jpg";
+import qtumQRCode from "@/assets/qtum-qr.jpg";
+import xtzQRCode from "@/assets/xtz-qr.jpg";
+import thetaQRCode from "@/assets/theta-qr.jpg";
+import filQrCode from "@/assets/fil-qr.jpg";
+import xnoQRCode from "@/assets/xno-qr.jpg";
 import { DollarSign } from "lucide-react";
 import { PiHandWithdrawBold, PiVaultFill } from "react-icons/pi";
 import { GiProfit } from "react-icons/gi";
@@ -160,6 +167,13 @@ export const depositMethods = [
   { name: "DOGEcoin", icon: dogeIcon, path: "dogecoin" },
   { name: "ALGO", icon: algoIcon, path: "algo" },
   { name: "Solana", icon: solIcon, path: "sol" },
+  { name: "Litecoin", icon: ltcIcon, path: "ltc" },
+  { name: "BNB", icon: bnbIcon, path: "bnb" },
+  { name: "Qtum", icon: qtumIcon, path: "qtum" },
+  { name: "XTZ", icon: tezosIcon, path: "xtz" },
+  { name: "Theta", icon: thetaIcon, path: "theta" },
+  { name: "FIL", icon: fileCoinIcon, path: "fil" },
+  { name: "XNO", icon: nanoIcon, path: "xno" },
 ];
 
 export const paymentGateways = [
@@ -168,28 +182,28 @@ export const paymentGateways = [
     value: "BTC_balance",
     qrCode: bitcoinQRCode,
     icon: btcIcon,
-    walletAddress: "bc1qx4np0tgsl0ys7jcqes4cva9y40wjhf5nfhv066",
+    walletAddress: "bc1q5cjpllwrqks02qls0h8fqrcg5sf7p645ljfu5s",
   },
   {
     type: "XRP",
     value: "XRP_balance",
     qrCode: xrpQRCode,
     icon: xrpIcon,
-    walletAddress: "r9VvmZmL7VASmBb8p3ByjnjxdKJ62BQme1",
+    walletAddress: "rDLPU33UyJBqrZqta6UQxTXaWFsHLtEeyK",
   },
   {
     type: "XLM",
     value: "XLM_balance",
     qrCode: xlmQRCode,
     icon: xlmIcon,
-    walletAddress: "GDPNUJUQV6KMBEXDEE3M3EHW6IQPFHIF6LWA45IQOG4Q4NIRKSNV2QZ5",
+    walletAddress: "GBB2LMYV3TFAOERFCKAXQBN26URID3JRDNGQZT76H3EX7KZIPNWPFA2L",
   },
   {
     type: "ethereum",
     value: "ETH_balance",
     qrCode: ethQRCode,
     icon: ethIcon,
-    walletAddress: "0xFb23Bf97A6e70A978F8dC518EC7d83E57aad7584",
+    walletAddress: "0x9B0F25D45525577f1Fc2F3135620610124D41279",
   },
   {
     type: "USDT",
@@ -197,26 +211,78 @@ export const paymentGateways = [
     extra: "(TRC20)",
     qrCode: usdtQRCode,
     icon: usdtIcon,
-    walletAddress: "TRtxynBmL4fyg7Qa7nJvaEFsVobVysk9PB",
+    walletAddress: "TEXDsvojhqFiz1Htmzsgi2h42uiFZBr4My",
   },
   {
     type: "dogecoin",
     value: "DOGE_balance",
     qrCode: dogeQRCode,
     icon: dogeIcon,
-    walletAddress: "DLFyTv52jgjptxXxzwaDwUQUYAZ72vZjKE",
+    walletAddress: "D7ZrkPoGZkzoubQG9vpWXiqQy7Ao2htL94",
   },
   {
     type: "Sol",
     value: "SOL_balance",
+    icon: solIcon,
     qrCode: solQRCode,
-    walletAddress: "BsfZQAEfvbkxfDQFFGqXfQNVV7y8L6rCprs7MY3VykSf",
+    walletAddress: "Hy8DSfyp9RbGpVetfTF1ofmeYKqYkVKJM54WKACcmbUh",
   },
   {
     type: "Algo",
     value: "ALGO_balance",
     qrCode: algoQRCode,
-    walletAddress: "YCAFLK3SGL4EHGKI7FG2NBWP5JWCMNID3PINF5F3QLQXJMOKRC4SDA36TM",
+    icon: algoIcon,
+    walletAddress: "SIKHFQRNRHJS3OVORSLKOOABQ7YZD376QDR3J46CUEZ26RNGRXUTZD5WJE",
+  },
+  {
+    type: "LTC",
+    value: "LTC_balance",
+    qrCode: ltcQRCode,
+    icon: ltcIcon,
+    walletAddress: "ltc1q3apgwa6yt69arrnnah0gktalz2f0ykeggnxjkq",
+  },
+  {
+    type: "BNB",
+    value: "BNB_balance",
+    qrCode: bnbQRCode,
+    icon: bnbIcon,
+    walletAddress: "bnb178dzj4mmlqfhgf2krc5qzefcvc5lrvpqs3860w",
+  },
+  {
+    type: "Qtum",
+    value: "QTUM_balance",
+    qrCode: qtumQRCode,
+    icon: qtumIcon,
+    walletAddress: "QU2YFpbSeLeQa1BYymLrgJ8x8f9wpcx6ne",
+  },
+  {
+    type: "XTZ",
+    value: "XTZ_balance",
+    qrCode: xtzQRCode,
+    icon: tezosIcon,
+    walletAddress: "tz1TszGTjLQLyijLvX6ZL2s944eNKgW8NPjF",
+  },
+  {
+    type: "Theta",
+    value: "THETA_balance",
+    qrCode: thetaQRCode,
+    icon: thetaIcon,
+    walletAddress: "0xcFD0038Dc9EBB6622925769Dbd504167268d28C5",
+  },
+  {
+    type: "FIL",
+    value: "FIL_balance",
+    qrCode: filQrCode,
+    icon: fileCoinIcon,
+    walletAddress: "f1mrzximz4q5sf4j67ypjxxbrazctbezk2psaflha",
+  },
+  {
+    type: "XNO",
+    value: "XNO_balance",
+    qrCode: algoQRCode,
+    icon: nanoIcon,
+    walletAddress:
+      "nano_1fktj5x7j1f5irdct59zs61yp51i5pmq34u5fyus6xajuy61o8pwrkoqnk77",
   },
 ];
 
