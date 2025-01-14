@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import Slide from "./Slide";
 import aboutUsImage from "@/assets/about-image-2.avif";
+import { ChartNoAxesCombined } from "lucide-react";
+import { ChartSpline } from "lucide-react";
+import { UserRoundCheck } from "lucide-react";
 
 function AboutUs() {
   // bg-[#0f0f0f]
@@ -18,23 +21,16 @@ function AboutUs() {
         >
           <div className="flex flex-col sm:max-w-full px-5 sm:px-2 md:px-0 text-slate-50">
             <p className="text-sm mb-2 text-sky-500 capitalize">
-              Manage your digital assets
+              Manage and invest your digital assets
             </p>
             <h2 className="md:mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-50 capitalize md:max-w-[60%] lg:max-w-full">
               {/* About QFS Ledger */}
-              secure solutions for your digital assets and money
+              Developing the Powerful Brands and Identities!
             </h2>
             <p className="mt-4 max-w-3xl space-y-6">
-              {/* Holdings BRC Investment Group is one of the most transformative
-              technologies since the invention of the Internet. Holdings BRC
-              Investment Group stands firmly in support of financial freedom and
-              the liberty that Bitcoin provides globally for anyone to
-              voluntarily participate in a permissionless and decentralized
-              network which empowers people to not be marginalized by
-              governments and financial institutions. */}
-              This is a platform where you can buy & sell all your chosen
-              cryptocurrencies and digital assets at affordable prices. It is a
-              platform to leverage blockchain technology.
+              Acovesst a trusted agency for providing individuals with optimum
+              investment results that are much more profitable. goldentrustsapp
+              truely stands in support of financial freedom.
             </p>
             <ul className="about-description-box">
               <li>
@@ -44,7 +40,7 @@ function AboutUs() {
                 <p>Secure and fast payments</p>
               </li>
               <li>
-                <p>A wallet you can trust</p>
+                <p>An investment platform you can trust</p>
               </li>
             </ul>
             <Link
@@ -52,7 +48,7 @@ function AboutUs() {
               // removed bg-slate-900
               className=" focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-[fit-content] highlight-white/20 bg-sky-500 hover:bg-sky-400"
             >
-              Connect wallet
+              Explore Now
             </Link>
           </div>
         </Slide>
@@ -75,19 +71,22 @@ function AboutUs() {
       {/* <div className="flex flex-wrap flex-col justify-between sm:flex-row gap-5 mt-20">
         {[
           {
-            title: "ONLINE Wallets",
+            title: "Investment Growth",
             subtext:
-              "Best for security because it comes with the strongest security features and track record of any crypto online wallet.",
+              "Our financial experts support or help you to find out which way you can raise your funds more.",
+            icon: <ChartNoAxesCombined />,
           },
           {
-            title: "Multi Currency Support",
+            title: "Profitablity Factor",
             subtext:
-              "Multi-currency support means that shoppers can pay for your products or services using the currency.",
+              "We have carefuly compiled some digital assets that we now for sure will make our users much more profitable.",
+            icon: <ChartSpline />,
           },
           {
             title: "24/7 Live Support",
             subtext:
               "When you need help, our team of experts will work with you via our 24/7 live chat to reach a quick and efficient.",
+            icon: <UserRoundCheck />,
           },
         ].map((item) => (
           <div
@@ -95,10 +94,8 @@ function AboutUs() {
             className="col-md-4 boxes  bg-slate-800 highlight-white/5 rounded-lg p-6 text-white sm:w-[30%]"
           >
             <div className="">
-              <i className="lni lni-thunder"></i>
-              <h5 className="text-slate-300 font-semibold text-base">
-                {item.title}
-              </h5>
+              {item.icon}
+              <h5 className="font-semibold text-xl text-white">{item.title}</h5>
               <p className="mt-6 text-slate-300">{item.subtext}</p>
             </div>
           </div>

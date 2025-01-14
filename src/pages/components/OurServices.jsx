@@ -1,61 +1,65 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Slide from "./Slide";
 import chart from "@/assets/chart.png";
-import { IoIosThunderstorm } from "react-icons/io";
-import { FaHandHoldingDollar } from "react-icons/fa6";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { CryptoCurrencyMarket } from "react-ts-tradingview-widgets";
+import { ChartNoAxesCombined } from "lucide-react";
+import { ChartSpline } from "lucide-react";
+import { IoIosPeople } from "react-icons/io";
+import { RiLuggageDepositFill } from "react-icons/ri";
+import { BiMoneyWithdraw } from "react-icons/bi";
 
 function OurServices() {
   return (
-    <section
-      // className="relative pb-[17rem] mb:pb-[7rem] h-[750px] h-[350dvh] bottom-10 sm:h-[140dvh] lg:h-[260dvh]"
-      className="bg-[#0B1120] mt-[5rem]"
-    >
-      <div className="mx-auto pt-20 mt-[40px] md:px-3 sm:px-0 sm:pt-0">
+    <section className="bg-[#0B1120] sm:mt-[5rem] sm:py-4">
+      <div className="mx-auto pt-20 mt-[40px] sm:px-0 sm:pt-0 md:px-7 px-3">
         <Slide
           xAxis={100}
-          className="w-full h-[411px] md:ml-[-10px] border-solid border-2 border-white"
+          className="grid grid-cols-[1fr,1fr,1fr] md:grid-cols-3 overflow-x-auto bg-slate-800 rounded-lg"
         >
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/2Sd1lGBTLrg?si=G6-qfhZvVjAbuuZ-"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            // referrerpolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+          {[
+            { icon: IoIosPeople, title: "2,589", subtext: "active investors" },
+            {
+              icon: RiLuggageDepositFill,
+              title: "197,482,938",
+              subtext: "total deposits",
+            },
+            {
+              icon: BiMoneyWithdraw,
+              title: "2,820,938,272",
+              subtext: "withdrawals",
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className={`flex flex-col gap-4 justify-center items-center p-6 ${
+                index < 2 ? "border-r border-slate-700" : ""
+              }`}
+            >
+              <item.icon size={32} />
+              <p className="font-bold text-4xl">{item.title}</p>
+              <p className="uppercase text-xs">{item.subtext}</p>
+            </div>
+          ))}
         </Slide>
         <Slide
           xAxis={-90}
           className="px-5 sm:max-w-[540px] md:max-w-[720px] xl:max-w-[1140px] m-auto"
         >
-          <p className="text-base mt-7 text-sky-500 font-bold">
-            Why QFS Ledger
-          </p>
+          <p className="text-base mt-7 text-sky-500 font-bold">Why Acovesst</p>
           <h2 className="md:mt-4 text-3xl md:text-4xl font-extrabold tracking-tight text-left text-white py-1 md:max-w-[400px] mb-[32px]">
             {/* Our Services */}
             Everything you need for crypto trading is available.
           </h2>
-          {/* <p className="text-lg text-left max-w-3xl mx-auto text-slate-400">
-              Explore a full suite of secure, user-friendly solutions for
-              managing and protecting your digital assets. With QFS ledger,
-              enjoy seamless transactions, robust security, and unmatched
-              reliability tailored to safeguard your financial future.
-            </p> */}
         </Slide>
         <Slide
           xAxis={-90}
           className="px-5 flex justify-start flex-col md:flex-row gap-16 sm:max-w-[540px] md:max-w-[720px] xl:max-w-[1140px] m-auto"
-          // style={{ border: "2px solid orange" }}
         >
           <Tabs
             defaultValue="free"
             className="px-2 md:px-0 w-full md:w-auto md:max-w-[40%] text-white"
-            // style={{ border: "2px solid blue" }}
           >
-            {/*  className="bg-green-700 max-w-[95%] overflow-scroll" */}
             <TabsList className="text-white bg-slate-800 max-w-full w-full overflow-scroll md:overflow-hidden pl-[8rem] xxs:pl-[6rem] xs:pl-0 sm:pl-[10.5rem] lg:pl-0">
               <TabsTrigger value="free" className="capitalize">
                 Free trial accounts
@@ -145,22 +149,22 @@ function OurServices() {
         >
           {[
             {
-              title: "Online Wallets",
+              title: "Investment Growth",
               subtext:
-                "Best for security because it comes with the strongest security features & track record of any crypto online wallet.",
-              icon: <IoIosThunderstorm color="#136b09" size={32} />,
+                "Our financial experts support or help you to find out which way you can raise your funds more.",
+              icon: <ChartNoAxesCombined />,
             },
             {
-              title: "Multi Currency Support",
+              title: "Profitablity Factor",
               subtext:
-                "Multi-currency support means that shoppers can pay for your products or services using the currency.",
-              icon: <FaHandHoldingDollar color="#136b09" size={32} />,
+                "We have carefuly compiled some digital assets that we now for sure will make our users much more profitable.",
+              icon: <ChartSpline />,
             },
             {
               title: "24/7 Live Support",
               subtext:
-                "When you need help, our team of experts will work with you via our 24/7 live chat to reach a quick & efficient.",
-              icon: <MdOutlineSupportAgent color="#136b09" size={32} />,
+                "When you need help, our team of experts will work with you via our 24/7 live chat to reach a quick and efficient.",
+              icon: <MdOutlineSupportAgent />,
             },
           ].map((item, index) => (
             <Slide
@@ -177,7 +181,7 @@ function OurServices() {
                 > */}
               <div className="">
                 {item.icon}
-                <h5 className="text-slate-300 font-semibold text-base capitalize mt-2">
+                <h5 className="font-semibold text-base capitalize mt-2 text-white md:text-xl">
                   {item.title}
                 </h5>
                 <p className="mt-6 text-slate-300">{item.subtext}</p>

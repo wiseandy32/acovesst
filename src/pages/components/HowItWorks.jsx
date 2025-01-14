@@ -2,7 +2,7 @@ import Slide from "./Slide";
 
 function HowItWorks() {
   return (
-    <section className="h-[155dvh] bg-bottom bg-no-repeat bg-[#0B1120] bottom-10 inset-0 sm:h-[100dvh]">
+    <section className="h-[195dvh] bg-bottom bg-no-repeat bg-[#0B1120] bottom-10 inset-0 sm:h-[125dvh]">
       <div className="inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:16px_16px] ">
         <div className="relative max-w-5xl mx-auto pt-20 mt-[40px] px-3 sm:px-0 sm:pt-0">
           <Slide yAxis={90}>
@@ -10,9 +10,9 @@ function HowItWorks() {
               How it works
             </h2>
             <p className="text-lg text-center max-w-3xl mx-auto text-slate-400">
-              Get started in minutes: create an account, add your assets, and
-              let QFS Ledger handle the rest with powerful security backed by
-              quantum technology and smooth,reliable transactions.
+              We all have to start somewhere. Let us help get you on the right
+              track as you start your investing journey. With this innovative
+              platform you'll be ready to start in no time.
             </p>
           </Slide>
           <div
@@ -21,19 +21,22 @@ function HowItWorks() {
           >
             {[
               {
-                title: "step 1",
+                heading: "Registeration",
+                title: "Create an account",
                 subtext:
-                  "Sign up for onboarding on QFS, then verify your identity.",
+                  "Getting started with us is really easy. Fill in the requested fields regarding your personal information and trading expertise to complete Client Area registration.",
               },
               {
-                title: "step 2",
+                heading: "investment",
+                title: "purchase a plan",
                 subtext:
-                  "Once KYC Submission is Approved, proceed to Sync your wallet with KYC. You can also Apply for Humanitarian Project.",
+                  "You have an unlimited access to our wide range of profitable plans to subscribe to. Once your contract is started, your earnings will automatically be credited to you wallet.",
               },
               {
-                title: "step 3",
+                heading: "withdrawal",
+                title: "make withdrawal",
                 subtext:
-                  "Bid for the new QFS cards that allow you to shop Worldwide.",
+                  "Once earnings has been collected or claimed, you can confidently head straight for the withdrawal section to withdraw your funds. Funds are immediately sent to your wallet address.",
               },
             ].map((item, index) => (
               <Slide
@@ -50,8 +53,17 @@ function HowItWorks() {
                 > */}
                 <div className="">
                   <i className="lni lni-thunder"></i>
-                  <h5 className="text-slate-300 font-semibold text-base capitalize">
-                    {item.title}
+                  <div className="flex items-center gap-2 uppercase">
+                    <div className="w-10 h-[4px] bg-[linear-gradient(to_right,_#5a49f8,_#7a64f2)]"></div>
+                    <p>{item.heading}</p>
+                  </div>
+                  <h5 className="text-slate-300 font-semibold text-base capitalize relative">
+                    <span className="text-8xl font-bold opacity-10">
+                      0{index + 1}
+                    </span>
+                    <span className="absolute left-[0] top-[45%] text-2xl leading-8 text-white font-medium tracking-tighter">
+                      {item.title}
+                    </span>
                   </h5>
                   <p className="mt-6 text-slate-300">{item.subtext}</p>
                 </div>

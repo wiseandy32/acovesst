@@ -31,19 +31,15 @@ function Hero() {
       <div className="sm:max-w-[540px] md:max-w-[720px] xl:max-w-[1140px] m-auto relative max-w-5xl mx-auto pt-5 md:pt-20 sm:pt-24 lg:pt-32 mt-[40px] px-3 sm:px-0">
         <Slide yAxis={90}>
           <h1 className="h mt-[40px] md:mt-0 py-5 pt-10 md:pt-0 capitalize font-extrabold text-3xl md:text-4xl sm:text-5xl lg:text-6xl tracking-tight text-left md:text-center text-white md:py-10">
-            secure your financial future with quantum financial system.
+            {/* take your finances to the next level. */}
+            &nbsp;
           </h1>
           {/* removed p */}
           <p className="mt-[40px] md:mt-6 md:text-lg text-left md:text-center max-w-3xl text-sm mx-auto text-white">
-            qfswrdledger Ledger stands as the world&apos;s most secure ledger
-            and a decentralized digital banking system. It&apos;s specially
-            crafted by the Quantum Financial System in collaboration with
-            Nesara/Gesara, introducing a revolutionary banking system with
-            robustly backed digital assets to ensure the safety of your
-            finances. It&apos;s simple, seamless, and secure, equipped to manage
-            your ISO20022 coins (XRP/XLM) and various other crypto assets like
-            Bitcoin, USDT, Ethereum, Dogecoin, Litecoin, TRX, etc., guarding
-            against crashes and cyberattacks.
+            With Acovesst, algorithmic and blockchain solutions for crypto
+            trading you can easily manage your finances and invest in your
+            future. all in one place. Full transparency. More trust, Minimize
+            risk, maximize rewards.
           </p>
         </Slide>
         <Slide

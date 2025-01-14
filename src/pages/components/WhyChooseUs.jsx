@@ -14,7 +14,7 @@ function WhyChooseUs() {
               Start Your Secure Journey Today:
             </h2>
             <p className="mt-4 max-w-3xl space-y-6 text-slate-50 ">
-              Choose QFS Ledger for cutting-edge security, seamless assets
+              Choose Acovesst for cutting-edge security, seamless assets
               management, and peace of mind. Our commitment to stability and
               protection ensures your digital assets are safe and accessible
               whenever you need them
@@ -30,11 +30,7 @@ function WhyChooseUs() {
                   index + 3
                 }] bg-slate-800 highlight-white/5 rounded-lg p-6 text-white hover:bg-slate-700 hover:shadow-[0_35px_60px_-15px_rgba(0,0,32,0.8)] flex flex-col`}
               >
-                <img
-                  src={item.image}
-                  alt=""
-                  className="rounded-lg w-full h-[250px] md:h-fit object-cover object-center md:object-contain"
-                />
+                <item.icon size={32} />
                 <h5 className="text-white font-semibold text-2xl capitalize mt-2">
                   {item.title}
                 </h5>

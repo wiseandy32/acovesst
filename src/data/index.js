@@ -33,6 +33,9 @@ import dogeQRCode from "@/assets/doge-qr.jpg";
 import algoQRCode from "@/assets/algo-qr.jpg";
 import solQRCode from "@/assets/sol-qr.jpg";
 import { DollarSign } from "lucide-react";
+import { PiHandWithdrawBold, PiVaultFill } from "react-icons/pi";
+import { GiProfit } from "react-icons/gi";
+import { MdAccountBalanceWallet } from "react-icons/md";
 
 export const registrationFormField = [
   {
@@ -102,41 +105,23 @@ export const loginFormFields = [
 
 export const chooseUsCardInfo = [
   {
-    title: "Digital Adaptation",
+    title: "Safe & Secure",
     subtext:
-      "The Quantum Financial System (QFS) is indeed a real concept and a subject of ongoing research and development but has yet to be fully implemented globally.",
+      "This platform is built and maintained with maximum security in order to retain the ability to keep the trust of it's users.",
     start: 1,
-    image: chooseUsImage1,
+    icon: PiVaultFill,
   },
   {
-    title: "Quantum Financial System",
+    title: "Profitable Assets",
     subtext:
-      "The Quantum Financial System (QFS) originally began as a concept that was then developed by various researchers, scientists, and experts in the fields of finance, physics, and computer science over a period of time.",
-    image: chooseUsImage2,
+      "All assets enlisted on this platform have been tested and found to be really profitable to make any sort of investment on.",
+    icon: GiProfit,
   },
   {
-    title: "How it Works",
+    title: "Instant Withdrawals",
     subtext:
-      "Quantum computing is a form of computing that uses quantum-mechanical phenomena, such as superposition and entanglement, to perform operations on data.",
-    image: chooseUsImage3,
-  },
-  {
-    title: "Near Instantaneous Transaction",
-    subtext:
-      "With the use of quantum computing and blockchain technology, it will become possible to conduct financial transactions in real-time and without the need for intermediaries (like banks).",
-    image: chooseUsImage4,
-  },
-  {
-    title: "Increased Security",
-    subtext:
-      "With the use of quantum computing and blockchain technology, it will be much more difficult for hackers to steal financial information or conduct fraudulent transactions.",
-    image: chooseUsImage5,
-  },
-  {
-    title: "Blockchain Utilization",
-    subtext:
-      "In this new quantum financial system, blockchain technology will be used to assist in the creation of a secure and transparent financial system.",
-    image: chooseUsImage6,
+      "Choose the amount to withdraw and receive it instantly, to your preferred crypto wallet in your account, instantly.",
+    icon: PiHandWithdrawBold,
   },
 ];
 

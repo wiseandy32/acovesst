@@ -4,21 +4,19 @@ import logo from "../assets/logo.png";
 
 function Footer() {
   return (
-    <footer className="pt-20 mb-20 sm:pt-32 sm:mb-32 md:pt-20 md:mb-5 sm:px-10 text-white">
+    <footer className="mb-20 sm:pt-32 sm:mb-32 md:pt-20 md:mb-5 sm:px-10 text-white">
       <div className="sm:mt-0 flex flex-col-reverse sm:flex-row justify-between gap-16 sm:gap-0">
-        <div
-          className="flex flex-col sm:flex-row justify-between gap-y-4 sm:gap-y-10 w-full px-5 sm:px-0"
-          // style={{ border: "2px solid red" }}
-        >
+        <div className="flex flex-col sm:flex-row justify-between gap-y-4 sm:gap-y-10 w-full px-5 sm:px-0">
           <Slide yAxis={90} className="sm:w-[33%]">
             <div className="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-50 capitalize">
               <img src={logo} width={160} height={20} alt="" />
             </div>
 
-            <p className="mt-4 max-w-3xl space-y-6 ">
-              JOIN THE BIGGEST FINANCIAL REVOLUTIONARY SYSTEM DESIGNED TO
-              OVERTAKE THE WORLD&apos;S BANKING SYSTEM BY ELIMINATING CONTROL OF
-              MONEY BY CABALS.
+            <p className="mt-4 max-w-3xl space-y-6">
+              Discover the future of finance with our cutting-edge crypto
+              investment platform. Empower yourself with the knowledge and tools
+              to navigate the world of digital currencies. Join us today and be
+              part of the financial revolution.
             </p>
           </Slide>
           <div className="flex justify-between mt-10 md:w-[50%] sm:justify-evenly">
